@@ -1,0 +1,56 @@
+Requisitos del programa de máquinas de café
+1. Indique al usuario preguntando “¿Qué le gustaría? (espresso/café con leche/capuchino):”
+a. Verifique la entrada del usuario para decidir qué hacer a continuación.
+b. El mensaje debe mostrarse cada vez que se completa la acción, p. una vez que la bebida es
+dispensado. El aviso debería mostrarse nuevamente para atender al próximo cliente.
+2. Apague la máquina de café ingresando "apagado" en el mensaje.
+a. Para los mantenedores de la máquina de café, pueden usar "apagado" como la palabra secreta para apagar
+la máquina. Su código debería finalizar la ejecución cuando esto suceda.
+3. Imprimir informe.
+a. Cuando el usuario ingresa "informe" en el indicador, se debe generar un informe que muestre
+los valores actuales de los recursos. p.ej.
+Agua: 100ml
+Leche: 50ml
+Café: 76g
+Dinero: $2.5
+4. Comprobar recursos suficientes?
+a. Cuando el usuario elige una bebida, el programa debe comprobar si hay suficientes
+recursos para hacer esa bebida.
+b. P.ej. si Latte requiere 200 ml de agua pero solo quedan 100 ml en la máquina. Debería
+No continúe haciendo la bebida sino que escriba: "Lo siento, no hay suficiente agua".
+C. Lo mismo debería suceder si se agota otro recurso, p. leche o café.
+5. Procesar monedas.
+a. Si hay suficientes recursos para hacer la bebida seleccionada, entonces el programa debe
+pide al usuario que inserte monedas.
+b. Recuerde que quarters = $0.25, dimes = $0.10, nickles = $0.05, pennies = $0.01
+C. Calcular el valor monetario de las monedas insertadas. P.ej. 1 quarter, 2 dimes, 1 nickel, 2
+centavos = 0.25 + 0.1 x 2 + 0.05 + 0.01 x 2 = $0.52
+6. ¿La transacción del cheque fue exitosa?
+a. Verifique que el usuario haya ingresado suficiente dinero para comprar la bebida que seleccionó.
+Por ejemplo, Latte cuesta $ 2.50, pero solo insertaron $ 0.52 y luego de contar las monedas, el
+El programa debe decir “Lo siento, no es suficiente dinero. Dinero devuelto.”.
+b. Pero si el usuario ha insertado suficiente dinero, entonces el costo de la bebida se agrega al
+máquina como la ganancia y esto se reflejará la próxima vez que se active el "informe". P.ej.
+Agua: 100ml
+Leche: 50ml
+Café: 76g
+Dinero: $2.5
+C. Si el usuario ha introducido demasiado dinero, la máquina debería ofrecer cambio.
+P.ej. “Aquí hay $2.45 dólares en cambio”. El cambio debe redondearse a 2 decimales
+lugares.
+7. Hacer café.
+a. Si la transacción es exitosa y hay suficientes recursos para hacer que la bebida sea la
+seleccionado por el usuario, entonces los ingredientes para hacer la bebida deben deducirse de la
+Recursos de máquinas de café.
+P.ej. Informe antes de comprar café con leche:
+Agua: 300ml
+Leche: 200ml
+Café: 100g
+Dinero: $0
+Informe después de comprar café con leche:
+Agua: 100ml
+Leche: 50ml
+Café: 76g
+Dinero: $2.5
+b. Una vez que se hayan deducido todos los recursos, dígale al usuario “Aquí está su café con leche. ¡Disfrutar!". Si
+latte era su elección de bebida.
