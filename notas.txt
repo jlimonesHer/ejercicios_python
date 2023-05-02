@@ -1,0 +1,5 @@
+1- imprime reporte
+2- checkea recursos suficientes
+3- procesa monedas
+4- verificar transacción exitosa
+5- haceer cafe y restar recursos
