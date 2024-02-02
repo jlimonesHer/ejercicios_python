@@ -1,5 +1,5 @@
 #Calculator
-from replit import clear
+
 from imports.art import logo
 
 def add(n1, n2):
@@ -19,10 +19,10 @@ def split(n1, n2):
     return n1 / n2
 
 operation_dic = {
-    "+": add(),
-    "-": subtraction(),
-    "*": multiply(),
-    "/": split(),
+    "+": add,
+    "-": subtraction,
+    "*": multiply,
+    "/": split,
 }
 
 print(logo)
@@ -52,7 +52,6 @@ while not other_operation:
     new_calculation = input(f"Type 'y' to continue calculating with {total}, or type 'n' to start a new calculation: ")
     if new_calculation == "y":
         total_operation = True
-        clear()
     else:
         other_operation = True
         print("Goodbye.")
