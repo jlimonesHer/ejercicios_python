@@ -7,7 +7,6 @@ class Ball(Turtle):
         super().__init__()
         self.turtle = Turtle()
         self.create_ball()
-        # self.move()
 
     def create_ball(self):
         self.turtle.penup()
@@ -17,3 +16,7 @@ class Ball(Turtle):
 
     def move(self):
         self.turtle.forward(5)
+
+
+
+

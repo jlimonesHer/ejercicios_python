@@ -8,6 +8,7 @@ class PlayingField:
         self.screen = Screen()
         self.created_screen()
         self.turtle = Turtle()
+        self.turtle.hideturtle()
         self.created_turtle()
         self.draw_dashed_line()
 
